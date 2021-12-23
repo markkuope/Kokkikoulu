@@ -15,4 +15,17 @@ public class Resepti : MonoBehaviour
     {
         
     }
+
+    void OnEnable()
+    {
+        print(" Inside OnEnable");
+    }
+
+    void OnDisable()
+    {
+        print(" Inside OnDisable");
+    }
+
+
+
 }
