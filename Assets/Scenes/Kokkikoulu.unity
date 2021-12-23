@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 150881904}
   - component: {fileID: 150881905}
   - component: {fileID: 150881906}
+  - component: {fileID: 150881907}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -174,11 +175,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150881903}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7031b67f8c215f64dba09fafc8a04860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &150881907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150881903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fadbd18b71bd148acd75e00ec38928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
+  nimi: Markku
 --- !u!1 &1060674923
 GameObject:
   m_ObjectHideFlags: 0
