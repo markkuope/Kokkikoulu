@@ -10,7 +10,7 @@ public class Taulukot2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(palikat[2]);
+        //Destroy(palikat[2]);
     }
 
     // Update is called once per frame
