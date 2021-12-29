@@ -5,15 +5,24 @@ using UnityEngine;
 public class FindTest : MonoBehaviour
 {
     GameObject searchObj;
+    GameObject[] enemies;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        searchObj = GameObject.Find("Cube/Cube2/Enemy");
+        GameObject.Find("Cube").SetActive(false);
+        //enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        //searchObj = GameObject.FindWithTag("Enemy");
+        //searchObj = GameObject.Find("Cube/Cube2/Enemy");
         //searchObj = GameObject.Find("Cube");
 
-        Destroy(searchObj);
+        //foreach (GameObject enemy in enemies)
+        //{
+        //    Destroy(enemy);
+        //}
+
+
+        //Destroy(searchObj);
 
     }
 
