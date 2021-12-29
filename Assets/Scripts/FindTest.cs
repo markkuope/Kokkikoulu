@@ -10,7 +10,7 @@ public class FindTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("Cube").SetActive(false);
+        //GameObject.Find("Cube").SetActive(false);
         //enemies = GameObject.FindGameObjectsWithTag("Enemy");
         //searchObj = GameObject.FindWithTag("Enemy");
         //searchObj = GameObject.Find("Cube/Cube2/Enemy");
@@ -23,6 +23,18 @@ public class FindTest : MonoBehaviour
 
 
         //Destroy(searchObj);
+
+        GameObject.Find("Cube").GetComponent<PlayerHealth>().lives = 7;
+        GameObject.Find("Cube").GetComponent<Rigidbody>().useGravity = false;
+
+        //Mikäli peliobjektissa on useita samantyyppisiä komponentteja, niitä voi kaikkia ohjailla kerralla käskyllä GetComponents<>.
+
+        //Peliobjektin lapsiin kiinnitetyt komponentit löytyvät käskyllä GetComponentInChildren<>
+
+        //Käytössä on myös käsky GetComponentInParent<>
+
+
+
 
     }
 

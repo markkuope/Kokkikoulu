@@ -22,10 +22,10 @@ public class GetComponentTest : MonoBehaviour
         //rb.mass = 10;
 
         // Haetaan PlayerHealth -scripti ja tallennetaan se health -muuttujaan
-        health = GetComponent<PlayerHealth>();
+        //health = GetComponent<PlayerHealth>();
 
         // Muutetaan PlayerHealth -scriptin lives arvoa
-        health.lives = 9;
+        //health.lives = 9;
 
 
     }
