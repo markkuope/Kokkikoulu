@@ -1023,7 +1023,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2356f8a6639286b4595dde8354f93b02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 3131392007797762207, guid: 267e011596433fb49bdec0c86a07a274, type: 3}
+  ball:
+  - {fileID: 3131392007797762207, guid: 267e011596433fb49bdec0c86a07a274, type: 3}
+  - {fileID: 3131392007797762207, guid: 86411b63c80345b44af908fb6e78273d, type: 3}
+  - {fileID: 3131392007797762207, guid: 8cafccf84e75d29409172f4d3360ff82, type: 3}
 --- !u!114 &1865230602
 MonoBehaviour:
   m_ObjectHideFlags: 0
