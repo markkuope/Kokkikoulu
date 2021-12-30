@@ -11,7 +11,7 @@ public class InstantiateTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(ball, transform.position, Quaternion.identity);
+        //Instantiate(ball, transform.position, Quaternion.identity);
         //Quaternion.identity means no rotation
 
     }
@@ -19,6 +19,10 @@ public class InstantiateTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0)) //Left mouse button
+        {
+            Instantiate(ball, transform.position, Quaternion.identity);
+        }
+
     }
 }
