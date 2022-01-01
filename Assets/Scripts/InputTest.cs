@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InputTest : MonoBehaviour
 {
+    public float speed;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +32,22 @@ public class InputTest : MonoBehaviour
         //}
 
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            print(" Space n‰pp‰int‰ painettu ");
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    print(" Space n‰pp‰int‰ painettu ");
 
-            GetComponent<Renderer>().material.color = Color.green;
-        }
-    }
+        //    GetComponent<Renderer>().material.color = Color.green;
+        //}
+
+         float xInput = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+
+         float yInput = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+
+         print(xInput);
+
+         transform.Translate(xInput , yInput, 0);
+
+        //Input.GetAxisRaw
+
+    } // update p‰‰ttyy t‰h‰n
 }
