@@ -8,9 +8,15 @@ public class PhysicsTest : MonoBehaviour
     public float speed;
     public int jumpForce;
 
+    public float bulletSpeed;
+    bool shoot = false;
+
     bool jump = false;
 
     float inputX, inputY;
+
+    public GameObject bullet;
+    public Transform bulletPos;
 
     void Awake()
     {
@@ -35,6 +41,12 @@ public class PhysicsTest : MonoBehaviour
             jump = true;
         }
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            shoot = true;
+        }
+
+
 
 
     }
@@ -51,6 +63,13 @@ public class PhysicsTest : MonoBehaviour
             jump = false;
         }
 
+        if (shoot)
+        {
+            Shoot();
+
+            shoot = false;
+        }
+
 
 
     }
@@ -60,7 +79,12 @@ public class PhysicsTest : MonoBehaviour
         rb.AddForce(0, jumpForce, 0);
     }
 
+    void Shoot()
+    {
+        GameObject bulletSpawn = Instantiate(bullet, bulletPos.position, bullet.transform.rotation);
 
+        bulletSpawn.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, bulletSpeed);
+    }
 
 
 }
